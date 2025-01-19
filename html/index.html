@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <head>
+            <link rel="stylesheet" href="/style/style.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        </head>
+<header>
+    <nav class="navbar">
+        <div class="nav-brand">
+            <div class="logo">
+                <span class="logo-text">Premium</span>
+                <div class="logo-shine"></div>
+            </div>
+        </div>
+
+        <div class="nav-links">
+            <a href="#" class="nav-link active">
+                <span>Home</span>
+                <div class="link-effect"></div>
+            </a>
+            <a href="#" class="nav-link">
+                <span>Products</span>
+                <div class="link-effect"></div>
+            </a>
+            <a href="#" class="nav-link">
+                <span>Services</span>
+                <div class="link-effect"></div>
+            </a>
+            <a href="#" class="nav-link">
+                <span>About</span>
+                <div class="link-effect"></div>
+            </a>
+            <a href="#" class="nav-link">
+                <span>Contact</span>
+                <div class="link-effect"></div>
+            </a>
+        </div>
+
+
+
+        <button class="mobile-toggle">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </nav>
+
+    <!-- Mobile Menu -->
+
+</header>
+<main>
+    <div id="banner">
+        <h1>Design. Ideas. Creativity.</h1>
+        <p>A design studio focused on creating strong and effective visual communication output for a wide range of physical and digital products. We offer variety of affordable design services per project as well as monthly outsourcing packages.</p>
+<div id="button-Container">
+    <button class="button">Click Me</button>
+    <div class="buttonLinks toggle display">
+        <a href="#" class="nav-link active">
+            <span>Home</span>
+            <div class="link-effect"></div>
+        </a>
+        <a href="#" class="nav-link">
+            <span>Products</span>
+            <div class="link-effect"></div>
+        </a>
+        <a href="#" class="nav-link">
+            <span>Services</span>
+            <div class="link-effect"></div>
+        </a>
+        <a href="#" class="nav-link">
+            <span>About</span>
+            <div class="link-effect"></div>
+        </a>
+        <a href="#" class="nav-link">
+            <span>Contact</span>
+            <div class="link-effect"></div>
+        </a>
+    </div>
+    <button class="button2">Press Me</button>
+</div>
+ </div>
+    <div id="cards">
+        <h1>Unlock your next project potential
+            with our professional design expertise.</h1>
+        <p>From perfect brand designs to diverse design projects across many categories, we’ve got you covered.
+            Whatever your business needs, we’re here to assist.</p>
+        <div id="services">
+
+        </div>
+    </div>
+    <div class="process">
+        <div id="boxContainer1" class="box-container">
+            <div class="icon-container">
+                <i class="fa-regular fa-message"></i>
+            </div>
+            <h1>Get a Quote</h1>
+            <p>During quotung process, you need to provide all necessary information or us to review.</p>  
+        </div>
+        <div id="boxContainer2" class="box-container">
+            <div class="icon-container">
+                <i style="color: rgba(0, 119, 255, 0.596);" class="fa-solid fa-book-open-reader"></i>
+            </div>
+            <h1>Get a Quote</h1>
+            <p>During quotung process, you need to provide all necessary information or us to review.</p>  
+        </div>
+        <div id="boxContainer3" class="box-container">
+            <div class="icon-container">
+                <i class="fa-regular fa-face-smile"></i>
+            </div>
+            <h1>Get a Quote</h1>
+            <p>During quotung process, you need to provide all necessary information or us to review.</p>  
+        </div>
+    </div>
+    <div class="SubscribeContainer">
+    <h1>Subscribe to all of our services at flat monthly rates.
+        Let us be your new design department today.</h1>
+        <p>Searching for graphic designers to elevate your project? Need an experienced studio to infuse creativity and innovative design solutions? Brandbusters Design Studio brings over 15 years of expertise, supporting businesses of all types around the globe. Quality branding is crucial, and with Brandbusters, you're on the right path to success.</p>
+        <button class="button2">Press Me</button>
+    </div>
+</main>
+
+
+    
+    </body>
+    <script>
+        let i = true;
+        const bars = document.querySelector(".mobile-toggle")
+        const navLinks = document.querySelector(".nav-links") 
+
+if(bars){
+      
+    bars.addEventListener("click", (e) => {
+        console.log(e.target)
+        if(i) {
+            navLinks.classList.add("toggle") 
+           
+            i = !i;
+        } else {
+           navLinks.classList.remove("toggle")
+           navLinks.classList.add("nav-links")
+            i = !i;
+        }
+        
+    }); 
+}else{
+    navLinks.classList.add("nav-links")
+}
+
+    
+ 
+
+
+
+
+    </script>
+    <script src="/src/index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/src/gsap.js"></script>
+    
+</html>

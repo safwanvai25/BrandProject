@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style/cards.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-brand">
+                <div class="logo">
+                    <span class="logo-text">Premium</span>
+                    <div class="logo-shine"></div>
+                </div>
+            </div>
+    
+            <div class="nav-links">
+                <a href="#" class="nav-link active">
+                    <span>Home</span>
+                    <div class="link-effect"></div>
+                </a>
+                <a href="#" class="nav-link">
+                    <span>Products</span>
+                    <div class="link-effect"></div>
+                </a>
+                <a href="#" class="nav-link">
+                    <span>Services</span>
+                    <div class="link-effect"></div>
+                </a>
+                <a href="#" class="nav-link">
+                    <span>About</span>
+                    <div class="link-effect"></div>
+                </a>
+                <a href="#" class="nav-link">
+                    <span>Contact</span>
+                    <div class="link-effect"></div>
+                </a>
+            </div>
+    
+    
+    
+            <button class="mobile-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </nav>
+    
+        <!-- Mobile Menu -->
+    
+    </header>
+    
+    <main>
+        <div class="container">
+           <div class="img-container">
+            <img src="https://shorturl.at/9puAr" alt="">
+            <img src="https://in.mt/8oW" alt="">
+            <img src="https://shorturl.at/n2TQZ" alt="">
+            <img src="https://in.mt/8oV" alt="">
+            <img src="https://shorturl.at/vPpcx" alt="">
+           </div>
+
+
+           <div class="text-container">
+            <!-- Main heading for the content -->
+            <h1>Looking for a custom Brand Style Guide?</h1>
+        
+            <!-- Button with a quote call-to-action -->
+            <button>
+                <h1>GET A QUOTE</h1>
+                <p>SATISFACTION GUARANTEE</p>
+            </button>
+        
+            <!-- Section for the description -->
+            <div>
+                <h2>Description</h2>
+                <div>
+                    <!-- Brief description of the Brand Style Guide -->
+                    <p>Brand Style Guide is a set of rules to ensure consistency, so that the company is recognized in the same way on different markets and over time.</p>
+                    <p>The visual identity defines the core elements while leaving room for creativity in application. How a company looks can determine how successful it becomes. We can design simple and easy to understand, one-page Brand Style Guides that fit the brief and the requirements of the target market.</p>
+                    <p>Feel free to place your order today and let's grow your business together!</p>
+                </div>
+            </div>
+        
+            <!-- Section for the workflow -->
+            <div>
+                <h2>Workflow</h2>
+                <!-- Turnaround time and initial concepts details -->
+                <p><span>48 hours turnaround time</span></p>
+                <p><span>3 initial concepts</span></p>
+                <p><span>3 revisions</span></p>
+            </div>
+        
+            <!-- Section for the required inputs -->
+            <div>
+                <h2>Things That We Need</h2>
+                <!-- Numbered list of items needed from the client -->
+                <p>1. Your Logo. If you don't have one click here.</p>
+                <p>2. All information (name, phone, email...)</p>
+                <p>3. Horizontal or vertical style?</p>
+                <p>4. Dimensions</p>
+            </div>
+        
+            <!-- Section for the deliverables -->
+            <div>
+                <h2>You Will Receive</h2>
+                <!-- Numbered list of files and deliverables -->
+                <p>1. Source vector AI or PSD files</p>
+                <p>2. Print ready AI, EPS, PDF and PSD files</p>
+                <p>3. High quality design previews</p>
+            </div>
+        </div>
+        
+        
+        </div>
+    </main>
+
+</body>
+<button>   <a href="/html/index.html">index.html</a></button>
+<script>
+            let i = true;
+        const bars = document.querySelector(".mobile-toggle")
+        const navLinks = document.querySelector(".nav-links") 
+
+if(bars){
+      
+    bars.addEventListener("click", (e) => {
+        console.log(e.target)
+        if(i) {
+            navLinks.classList.add("toggle") 
+           
+            i = !i;
+        } else {
+           navLinks.classList.remove("toggle")
+           navLinks.classList.add("nav-links")
+            i = !i;
+        }
+        
+    }); 
+}else{
+    navLinks.classList.add("nav-links")
+}
+</script>
+<script src="/src/cards.js"></script>
+</html>
