@@ -27,6 +27,7 @@ gsap.from("#boxContainer1",{
         scrub:true,
         start:"top 10%",
         end:"top 0%",
+        
 
 
     }
@@ -65,7 +66,97 @@ gsap.from("#boxContainer3",{
 
 let ti = gsap.timeline()
 ti.from(".button2",{
-    y:-20,
+    opacity:0,
+    y:100,
     duration:3,
     delay:1,
+    scrollTrigger:{
+        trigger:".process h1",
+        scroller:"body",
+        scrub:2
+    }
 })
+
+ti.from(".image",{
+    opacity:0,
+    y:100,
+    duration:3,
+    delay:1,
+    scrollTrigger:{
+        trigger:".SubscribeContainer",
+        scroller:"body",
+        scrub:2,
+    
+    }
+})
+
+ti.from("#Date .sameDate",{
+y:100,
+duration:5,
+delay:1,
+opacity:0,
+scrollTrigger:{
+    trigger:"#Date",
+    scroller:"body",
+    scrub:2,
+    markers:true,
+    start:"top 20%",
+    end:"top 0%",
+ 
+}
+
+
+})
+
+ti.from(".firstDate",{
+   x:-100,
+    duration:5,
+    delay:1,
+    opacity:0,
+    scrollTrigger:{
+        trigger:"#Date",
+        scroller:"body",
+        scrub:2,
+        markers:true,
+        start:"top 20%",
+        end:"top 0%",
+     
+    }})
+
+    ti.from(".secondDate",{
+        x:100,
+        duration:5,
+        delay:1,
+        opacity:0,
+        scrollTrigger:{
+            trigger:"#Date",
+            scroller:"body",
+            scrub:2,
+            markers:true,
+            start:"top 20%",
+            end:"top 0%",
+         
+        }})
+
+        // Business 
+
+
+
+document.querySelectorAll(".card").forEach(element => {
+    
+ gsap.to(element,{
+        scale:0.7,
+        opacity:0,
+        scrollTrigger:{
+            trigger:element,
+            start:"top 15%",
+            end:"bottom 15%",
+            markers:true,
+            scrub:2
+        }
+    })
+
+
+
+
+});

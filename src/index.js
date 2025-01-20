@@ -1,3 +1,6 @@
+
+
+
 // banner , main working 
 
 const button = document.querySelector(".button")
@@ -103,3 +106,6 @@ for(let i of service){
      services.appendChild(div)
 
 }
+
+
+

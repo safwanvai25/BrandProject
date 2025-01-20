@@ -8,9 +8,11 @@
 html, body {
     min-height: 100vh;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: white;
+    
     height: 100%;
     width: 100%;
+ 
+
 }
 
 /* Navbar Styles */
@@ -143,6 +145,7 @@ html, body {
     cursor: pointer;
     font-size: 2rem;
     color: white;
+    margin: 0;
 }
 
 .mobile-toggle span {
@@ -296,6 +299,30 @@ main{
             background-color: #45a049;
             /* Darker blue */ transform: scale(1.05); 
         }
+
+        .button3 { 
+    
+            background-color: #4CAF50; 
+             border: none; 
+             color: white;
+              padding: 15px 32px; 
+              text-align: center; 
+              text-decoration: none;
+               display: inline-block; 
+               font-size: 16px; margin: 4px 2px;
+                cursor: pointer; 
+                border-radius: 12px;
+                 /* Fully rounded */ 
+                 transition: all 0.3s ease; } 
+                 .button3:hover { 
+                   
+                    background-color: #45a049;
+                    /* Darker blue */ transform: scale(1.05); 
+                }
+
+
+
+
  .buttonLinks{
     display: flex;
     flex-direction: column;
@@ -371,7 +398,7 @@ text-align: center;
     justify-content: center;
     align-items: center;
    margin: 4rem;
-   margin-top: 10rem;
+   margin-top: 6rem;
    margin-bottom: 0rem;
 
 }
@@ -397,8 +424,57 @@ text-align: center;
     text-align: center;
     padding: 0px 4rem;
     gap: 1.2rem;
+
+}
+.SubscribeContainer > img{
+    width: 100%;
 }
 
+#Date{
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    padding: 16rem;
+    font-size: 2.5rem;
+    padding-top: 5rem;
+    padding-bottom: 0;
+  
+}
+.popularityOfbusiness{
+    text-align: center;
+}
+
+.popularityOfbusiness h1{
+    margin-bottom: 0.6rem;
+    
+}
+
+
+.card{
+    border-radius: 25px;
+    width: 40%;
+    background-color: #007B9E;
+    padding: 1rem;
+    position: sticky;
+    top: 15vh;
+
+}
+
+
+#cards-container{
+    margin-top: 2rem;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 1rem;
+}
+
+#cards-container img{
+    width: 100%;
+    object-fit: fill;
+    border-radius: 25px;
+}
 
 /* Responsive Design */
 @media (max-width: 600px) {
@@ -408,6 +484,37 @@ text-align: center;
 .mobile-toggle{
     display: "none";
 }
+#Date{
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+    gap: 1em;
+    padding: 16rem;
+    font-size: 2.5rem;
+    padding-top: 5rem;
+    padding-bottom: 0;
+  
+}
+
+.card{
+    border-radius: 25px;
+    width: 100%;
+    background-color: #007B9E;
+    padding: 1rem;
+    position: sticky;
+    top: 15vh;
+
+}
+
+#cards-container{
+    margin: 2rem;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 1rem;
+}
+
 .toggle{
     display: flex;
     background-color: #636b75dc;
@@ -434,6 +541,8 @@ text-align: center;
         padding: 0px 0rem;
     }
 }
+
+
 
 @media (min-width:601px) {
     .nav-links {
